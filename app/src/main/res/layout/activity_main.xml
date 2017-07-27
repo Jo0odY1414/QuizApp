@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/answer_result"
+                style="@style/AnswerResultFiled"
+                android:text="Answer result" />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="textCapWords" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="Q1: How to do exit from a method?"/>
+
+            <CheckBox
+                android:id="@+id/an1_q1"
+                style="@style/AnswerStyle"
+                android:text="Using throwing an exception" />
+
+            <CheckBox
+                android:id="@+id/an2_q1"
+                style="@style/AnswerStyle"
+                android:text="Using continue" />
+
+            <CheckBox
+                android:id="@+id/an3_q1"
+                style="@style/AnswerStyle"
+                android:text="Using terminate" />
+
+            <CheckBox
+                android:id="@+id/an4_q1"
+                style="@style/AnswerStyle"
+                android:text="Using return" />
+
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="Q2: Which one is a single-line comment?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/an1_radio_button_q2"
+                    style="@style/AnswerStyle3"
+                    android:text="/ ... " />
+
+                <RadioButton
+                    android:id="@+id/an2_radio_button_q2"
+                    style="@style/AnswerStyle3"
+                    android:text="// ..." />
+
+                <RadioButton
+                    android:id="@+id/an3_radio_button_q2"
+                    style="@style/AnswerStyle3"
+                    android:text="/* ... */" />
+
+                <RadioButton
+                    android:id="@+id/an4_radio_button_q2"
+                    style="@style/AnswerStyle3"
+                    android:text="/* ..." />
+            </RadioGroup>
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="Q3: What is the value of x in this equation? \n x = 2+16*4/(2+2);" />
+
+            <EditText
+                android:id="@+id/anField_q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/answer"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="Q4: What is the correct way to declare a String" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/an1_radio_button_q4"
+                    style="@style/AnswerStyle"
+                    android:text="String your name = &quot; Amy &quot; ; " />
+
+                <RadioButton
+                    android:id="@+id/an2_radio_button_q4"
+                    style="@style/AnswerStyle"
+                    android:text="string name = new string(&quot;Amy&quot;) ;" />
+
+                <RadioButton
+                    android:id="@+id/an3_radio_button_q4"
+                    style="@style/AnswerStyle"
+                    android:text="String your_name = new String(&quot;Amy&quot;) ; " />
+
+                <RadioButton
+                    android:id="@+id/an4_radio_button_q4"
+                    style="@style/AnswerStyle"
+                    android:text="String your-name = &quot;Amy&quot; ; " />
+            </RadioGroup>
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:text="Q5: Select the Primitive Data Types for java programming language:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/an1_q5"
+                    style="@style/AnswerStyle2"
+                    android:text="double" />
+
+                <CheckBox
+                    android:id="@+id/an2_q5"
+                    style="@style/AnswerStyle2"
+                    android:text="Button" />
+
+                <CheckBox
+                    android:id="@+id/an3_q5"
+                    style="@style/AnswerStyle2"
+                    android:text="short" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/an4_q5"
+                    style="@style/AnswerStyle2"
+                    android:text="View" />
+
+                <CheckBox
+                    android:id="@+id/an5_q5"
+                    style="@style/AnswerStyle2"
+                    android:text="int" />
+
+                <CheckBox
+                    android:id="@+id/an6_q5"
+                    style="@style/AnswerStyle2"
+                    android:text="float" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/Button"
+            android:text="Submit"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"/>
+    </RelativeLayout>
+</ScrollView>

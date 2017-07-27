@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple Quiz For Java </string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="name">Your Name</string>
+
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="answer">Your Answer</string>
+
+</resources>
